@@ -1,7 +1,7 @@
 
 START_MSG = """
-Hello <b>{}</b> ! I'm <b>Akinator(Unofficial)</b>.
-We can play a guessing game.
+Hello <b>{}</b> ! I'm <b>FROM MEGGA</b>.
+WE CAN DO ALOT 
 Do <code>/play</code>
 """
 
@@ -19,7 +19,7 @@ ME_MSG = """
 """
 
 GITHUB_URL = "https://github.com/notPlasticCat"
-DEV_URL = "https://t.me/f22raptor_uwu"
+DEV_URL = "https://t.me/kidcrl"
 
 AKI_LANG_CODE = {
     'en': 'English',
