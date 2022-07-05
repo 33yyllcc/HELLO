@@ -26,7 +26,7 @@ def addUser(user_id: int, first_name: str, last_name: str, user_name: str) -> No
         "first_name": first_name,
         "last_name": last_name,
         "user_name": user_name,
-        "aki_lang": "en",
+        "aki_lang": "ar",
         "child_mode": 1,
         "total_guess": 0,
         "correct_guess": 0,
