@@ -100,7 +100,7 @@ def aki_play_callback_handler(update: Update, context:CallbackContext) -> None:
             aki['absolute_picture_path'] = open('aki_pics/none.jpg', 'rb')
         query.message.edit_media(
             InputMediaPhoto(media=aki['absolute_picture_path'],
-            caption=f"It's {aki['name']} ({aki['description']})! Was I correct?"
+            caption=f"اضن ان من تفكر به هو{aki['name']} ({aki['description']}) هل اختياري صحيح؟
             ),
             reply_markup=AKI_WIN_BUTTON
         )
@@ -242,7 +242,7 @@ def aki_lead_cb_handler(update: Update, context:CallbackContext) -> None:
 def main():
     updater = Updater(token=BOT_TOKEN)
     dp = updater.dispatcher
-    dp.add_handler(CommandHandler('start', aki_start, run_async=True))
+    dp.add_handler(CommandHandler('startstart', aki_start, run_async=True))
     dp.add_handler(CommandHandler('find', aki_find, run_async=True))
     dp.add_handler(CommandHandler('me', aki_me, run_async=True))
     dp.add_handler(CommandHandler('play', aki_play_cmd_handler, run_async=True))
