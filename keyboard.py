@@ -71,8 +71,8 @@ AKI_PLAY_KEYBOARD = InlineKeyboardMarkup(
 AKI_WIN_BUTTON = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton("Yes", callback_data='aki_win_y'),
-            InlineKeyboardButton("No", callback_data='aki_win_n'),
+            InlineKeyboardButton("نعم", callback_data='aki_win_y'),
+            InlineKeyboardButton("كلا", callback_data='aki_win_n'),
         ]
     ]
 )
