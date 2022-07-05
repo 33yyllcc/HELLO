@@ -5,7 +5,7 @@ from random import randint
 from pprint import pprint
 from keyboard import AKI_LANG_BUTTON, AKI_LEADERBOARD_KEYBOARD, AKI_PLAY_KEYBOARD, AKI_WIN_BUTTON, CHILDMODE_BUTTON, START_KEYBOARD
 from telegram import Update, ParseMode
-from telegram.ext import Updater, CommandHandler, CallbackContext, CallbackQueryHandler
+from telegram.ext import Updater, CommandHandler, CallbackContext, CallbackQueryHandler, Messagehandler 
 from config import BOT_TOKEN
 from database import (
     addUser, 
@@ -243,12 +243,12 @@ def main():
     updater = Updater(token=BOT_TOKEN)
     dp = updater.dispatcher
     dp.add_handler(Messagehandler('start', aki_start, run_async=True))
-    dp.add_handler(Messagehandler('find', aki_find, run_async=True))
-    dp.add_handler(Messagehandler('me', aki_me, run_async=True))
-    dp.add_handler(Messagehandler('play', aki_play_cmd_handler, run_async=True))
-    dp.add_handler(Messagehandler('language', aki_lang, run_async=True))
-    dp.add_handler(Messagehandler('childmode', aki_childmode, run_async=True))
-    dp.add_handler(Messagehandler('leaderboard', aki_lead, run_async=True))
+    dp.add_handler(CommandHandler('find', aki_find, run_async=True))
+    dp.add_handler(CommandHandler('me', aki_me, run_async=True))
+    dp.add_handler(CommandHandler('play', aki_play_cmd_handler, run_async=True))
+    dp.add_handler(CommandHandler('language', aki_lang, run_async=True))
+    dp.add_handler(CommandHandler('childmode', aki_childmode, run_async=True))
+    dp.add_handler(CommandHandler('leaderboard', aki_lead, run_async=True))
 
     dp.add_handler(CallbackQueryHandler(aki_set_lang, pattern=r"aki_set_lang_", run_async=True))
     dp.add_handler(CallbackQueryHandler(aki_set_child_mode, pattern=r"c_mode_", run_async=True))
