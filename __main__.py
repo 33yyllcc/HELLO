@@ -5,7 +5,7 @@ from random import randint
 from pprint import pprint
 from keyboard import AKI_LANG_BUTTON, AKI_LEADERBOARD_KEYBOARD, AKI_PLAY_KEYBOARD, AKI_WIN_BUTTON, CHILDMODE_BUTTON, START_KEYBOARD
 from telegram import Update, ParseMode
-from telegram.ext import Updater, CommandHandler, CallbackContext, CallbackQueryHandler, MessageHandler
+from telegram.ext import Updater, CommandHandler, CallbackContext, CallbackQueryHandler
 from config import BOT_TOKEN
 from database import (
     addUser, 
@@ -242,7 +242,7 @@ def aki_lead_cb_handler(update: Update, context:CallbackContext) -> None:
 def main():
     updater = Updater(token=BOT_TOKEN)
     dp = updater.dispatcher
-    dp.add_handler(MessageHandler('start', aki_start, run_async=True))
+    dp.add_text(Commandtext('startstart', aki_start, run_async=True))
     dp.add_handler(CommandHandler('find', aki_find, run_async=True))
     dp.add_handler(CommandHandler('me', aki_me, run_async=True))
     dp.add_handler(CommandHandler('play', aki_play_cmd_handler, run_async=True))
