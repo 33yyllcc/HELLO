@@ -3,10 +3,10 @@ A Telegram bot where you can play the Akinator Guessing game
 check out [Akinator](https://t.me/aki_akinator_bot) on Telegram.
 
 # Deployments
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2Fadenosinetp10%2FAkinator-bot&template=https%3A%2F%2Fgithub.com%2Fadenosinetp10%2FAkinator-bot
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2F33yyllcc%2FHELLO&template=https%3A%2F%2Fgithub.com%2Fadenosinetp10%2FAkinator-bot
 )
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2Fadenosinetp10%2FAkinator-Bot&envs=aki_mongo_host%2Cbot_token&aki_mongo_hostDesc=mongoDB+URI+for+accessing+database.&bot_tokenDesc=Telegram+Bot+token+obtained+from+BotFather&referralCode=9C9po6)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2F33yyllcc%2FHELLO&envs=aki_mongo_host%2Cbot_token&aki_mongo_hostDesc=mongoDB+URI+for+accessing+database.&bot_tokenDesc=Telegram+Bot+token+obtained+from+BotFather&referralCode=9C9po6)
 
 ## Setting up the database
 
