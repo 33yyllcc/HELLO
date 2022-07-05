@@ -100,7 +100,7 @@ def aki_play_callback_handler(update: Update, context:CallbackContext) -> None:
             aki['absolute_picture_path'] = open('aki_pics/none.jpg', 'rb')
         query.message.edit_media(
             InputMediaPhoto(media=aki['absolute_picture_path'],
-            caption=f"اضن ان من تفكر به هو{aki['name']} ({aki['description']}) هل اختياري صحيح؟
+            caption=f"اضن انك تفكر ب {aki['name']} ({aki['description']})! هل اختياري صحيح?" 
             ),
             reply_markup=AKI_WIN_BUTTON
         )
