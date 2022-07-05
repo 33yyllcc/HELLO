@@ -53,7 +53,7 @@ def aki_play_cmd_handler(update: Update, context: CallbackContext) -> None:
     user_id = update.effective_user.id
     msg = update.message.reply_photo(
         photo=open('aki_pics/aki_01.png', 'rb'),
-        caption="Loading..."
+        caption="جاري التحميل ..."
     )
     updateTotalGuess(user_id, total_guess=1)
     q = aki.start_game(language=getLanguage(user_id), child_mode=getChildMode(user_id))
@@ -115,7 +115,7 @@ def aki_win(update: Update, context: CallbackContext):
         query.message.edit_media(
             InputMediaPhoto(
                 media=open('aki_pics/aki_win.png', 'rb'),
-                caption="gg!"
+                caption="لقد ربحت كالعاده :)"
             ),
             reply_markup=None
         )
@@ -124,7 +124,7 @@ def aki_win(update: Update, context: CallbackContext):
         query.message.edit_media(
             InputMediaPhoto(
                 media=open('aki_pics/aki_defeat.png', 'rb'),
-                caption="bruh :("
+                caption="حسنا حظ اوفر لي "
             ),
             reply_markup=None
         )
