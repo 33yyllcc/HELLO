@@ -51,4 +51,4 @@ If Child mode is enabled, akinator won't show any NSFW content.
 <b>Current Status :</b> <pre>Child mode is {} !</pre>
 """
 
-AKI_FIRST_QUESTION = "This is the first question. You can't go back any further!"
+AKI_FIRST_QUESTION = "حبيبي هذا اول سؤال وين تريد ترجع ؟"
