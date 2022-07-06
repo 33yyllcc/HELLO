@@ -246,9 +246,9 @@ def main():
     dp.add_handler(CommandHandler('find', aki_find, run_async=True))
     dp.add_handler(CommandHandler('me', aki_me, run_async=True))
     dp.add_handler(CommandHandler('play', aki_play_cmd_handler, run_async=True))
-    dp.add_handler(CommandHandler('language', aki_lang, run_async=True))
-    dp.add_handler(CommandHandler('childmode', aki_childmode, run_async=True))
-    dp.add_handler(CommandHandler('leaderboard', aki_lead, run_async=True))
+    dp.add_handler(CommandHandler('lang', aki_lang, run_async=True))
+    dp.add_handler(CommandHandler('child', aki_childmode, run_async=True))
+    dp.add_handler(CommandHandler('top', aki_lead, run_async=True))
 
     dp.add_handler(CallbackQueryHandler(aki_set_lang, pattern=r"aki_set_lang_", run_async=True))
     dp.add_handler(CallbackQueryHandler(aki_set_child_mode, pattern=r"c_mode_", run_async=True))
