@@ -195,7 +195,7 @@ def del_data(context:CallbackContext, user_id: int):
 
 def aki_lead(update: Update, _:CallbackContext) -> None:
     update.message.reply_text(
-        text="Check Leaderboard on specific categories in Akinator.",
+        text="مرحبا بك في قوائم التوب للعبه المارد",
         reply_markup=AKI_LEADERBOARD_KEYBOARD
     )
 
