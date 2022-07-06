@@ -45,8 +45,8 @@ AKI_LANG_BUTTON = InlineKeyboardMarkup(
 CHILDMODE_BUTTON = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton("Enable", callback_data='c_mode_1'),
-            InlineKeyboardButton("Disable", callback_data='c_mode_0')
+            InlineKeyboardButton("مفعل", callback_data='c_mode_1'),
+            InlineKeyboardButton("معطل", callback_data='c_mode_0')
         ]
     ]
 )
@@ -81,12 +81,12 @@ AKI_WIN_BUTTON = InlineKeyboardMarkup(
 AKI_LEADERBOARD_KEYBOARD = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton("Total Guesses", callback_data='aki_lead_tguess'),
-            InlineKeyboardButton("Correct Guesses", callback_data='aki_lead_cguess'),
+            InlineKeyboardButton("جميع الاختيارات", callback_data='aki_lead_tguess'),
+            InlineKeyboardButton("الاختيارات الصحيحه", callback_data='aki_lead_cguess'),
         ],
         [
-            InlineKeyboardButton("Wrong Guesses", callback_data='aki_lead_wguess'),
-            InlineKeyboardButton("Total Questions", callback_data='aki_lead_tquestions'),
+            InlineKeyboardButton("الاختيارات الخاطئه", callback_data='aki_lead_wguess'),
+            InlineKeyboardButton("جميع الاساله", callback_data='aki_lead_tquestions'),
         ]
     ]
 )
