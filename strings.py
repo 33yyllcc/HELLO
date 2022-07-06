@@ -41,14 +41,14 @@ AKI_LANG_CODE = {
 }
 
 AKI_LANG_MSG = """
-Change Playing Language.
-<b>NOTE : This does not change the Bot language.</b>
-<b>Current Language :</b> <pre>{}</pre>
+تغيير لغه البوت.
+<b>NOTE : هذا لا يغير لغه البوت وإنما اللعبه فقط.</b>
+<b>اللغه الحاليه  :</b> <pre>{}</pre>
 """
 
 CHILDMODE_MSG = """
-If Child mode is enabled, akinator won't show any NSFW content.
-<b>Current Status :</b> <pre>Child mode is {} !</pre>
+اذا كان وضع الأطفال مفعل لن يرسل البوت اشياء اباحيه .
+<b>الحاله الان  :</b> <pre>وضع الأطفال  {} !</pre>
 """
 
 AKI_FIRST_QUESTION = "حبيبي هذا اول سؤال وين تريد ترجع ؟"
